@@ -24,7 +24,7 @@ public class Main {
         Ticket ticket1 =  parking1.getTicket();
 
         Scanner scanner = new Scanner(System.in);
-        //scanner.nextInt();
+        scanner.nextInt();
 
         System.out.println(ticket1.getTime());
         System.out.println(ticket1.getParkingPlaceNumber());
