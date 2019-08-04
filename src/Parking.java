@@ -19,10 +19,11 @@ public class Parking {
 
         ParkingPlace parkingPlace = null;
         for (ParkingPlace entry : this.parkingPlaceList) {
-            System.out.println(entry.getPlaceNumber());
+            //System.out.println(entry.getPlaceNumber());
             if (entry.getIsFree()) {
                 parkingPlace = entry;
-                System.out.println(entry.getPlaceNumber());
+                //System.out.println(entry.getPlaceNumber());
+                parkingPlace.setFree(false);
                 break;
             }
         }
@@ -51,4 +52,11 @@ public class Parking {
 
     }
 
+    public void showParkingPlaces(List<ParkingPlace> parking){
+
+        for (ParkingPlace place : parking){
+            System.out.println(place.getPlaceNumber() + " " + place.getIsFree());
+
+        }
+    }
 }

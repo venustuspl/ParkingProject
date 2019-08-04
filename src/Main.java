@@ -17,18 +17,24 @@ public class Main {
         parkingPlaceList.add(place3);
 
         Parking parking1 = new Parking("Warszawa downtown",parkingPlaceList);
-        System.out.println(place1.getPlaceNumber() + " " + place1.getIsFree());
-
+        //System.out.println(place1.getPlaceNumber() + " " + place1.getIsFree());
+        place1.setFree(false);
+        place2.setFree(false);
 
 
         Ticket ticket1 =  parking1.getTicket();
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj dowolną liczbę: ");
         scanner.nextInt();
 
         System.out.println(ticket1.getTime());
         System.out.println(ticket1.getParkingPlaceNumber());
         System.out.println(parking1.getCosts(ticket1));
+
+
+
+        parking1.showParkingPlaces(parkingPlaceList);
 
 
         System.out.println("");
