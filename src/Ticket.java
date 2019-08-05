@@ -18,4 +18,11 @@ public class Ticket {
     public int getParkingPlaceNumber(){
         return this.parkingPlaceNumber;
     }
+
+    public Ticket(){
+        System.out.println("Nie ma miejsc");
+
+    }
+
+
 }

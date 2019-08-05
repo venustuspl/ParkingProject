@@ -16,10 +16,13 @@ public class ParkingPlace {
         return this.isFree;
     }
 
-    public void setFree(boolean free) {
-        this.isFree = free;
+    public void setFree() {
+        this.isFree = true;
     }
 
+    public void setUse() {
+        this.isFree = false;
+    }
     public void setPlaceNumber(int placeNumber) {
         this.placeNumber = placeNumber;
     }
